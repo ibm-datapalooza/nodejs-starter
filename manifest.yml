@@ -1,8 +1,9 @@
 applications:
 - memory: 512M
   services:
-  - datapalooza-weatherinsights
+  - weatherinsights
+  name: Datapalooza Node.js Starter
 declared-services:
-  datapalooza-weatherinsights:
+  weatherinsights:
     label: weatherinsights
     plan:  Free
