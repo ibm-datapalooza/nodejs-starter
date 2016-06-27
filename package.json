@@ -9,9 +9,11 @@
     "body-parser": "^1.15.2",
     "cfenv": "1.0.x",
     "cookie-parser": "^1.4.3",
+    "dotenv": "^2.0.0",
     "ejs": "^2.4.2",
     "express": "4.13.x",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "request": "^2.72.0"
   },
   "repository": {},
   "engines": {

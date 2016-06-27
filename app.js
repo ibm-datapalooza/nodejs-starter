@@ -4,6 +4,9 @@
 // node.js starter application for Bluemix
 //------------------------------------------------------------------------------
 
+//Environment variables
+require('dotenv').config()
+
 // This application uses express as its web server
 // for more info, see: http://expressjs.com
 var express = require('express');
@@ -20,7 +23,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var os = require('./routes/os');
 var transportAPI = require('./routes/transportAPI');
-var weatherChannel = require('./routes/weatherChannel');
+var weather = require('./routes/weather');
 
 // create a new express server
 var app = express();
@@ -37,7 +40,7 @@ app.use(cookieParser());
 app.use('/', index);
 app.use('/os', os);
 app.use('/transportAPI', transportAPI);
-app.use('/weatherChannel', weatherChannel);
+app.use('/weather', weather);
 
 //EJS
 app.set('view engine', 'ejs');
