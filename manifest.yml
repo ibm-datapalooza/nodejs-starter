@@ -1,0 +1,8 @@
+applications:
+- memory: 512M
+  services:
+  - datapalooza-weatherinsights
+declared-services:
+  datapalooza-weatherinsights:
+    label: weatherinsights
+    plan:  Free
