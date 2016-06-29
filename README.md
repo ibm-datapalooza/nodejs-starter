@@ -25,4 +25,14 @@
 
 8) Click "Build & Deploy" to see the status of the deployment. Once this stage has completed, your app should be updated on the Bluemix URL.  
 
-9) Your app has now been loaded with your Transport API keys. You can experiment with the application, running queries for nearby train stations, Tfl journey planning, 10 day and 24 hour weather forecasting as well as viewing the OS Map.
+9) Your app has now been loaded with your Transport API keys. You can experiment with the application, running queries for nearby train stations, Tfl journey planning, 10 day and 24 hour weather forecasting as well as viewing the OS Map.  
+
+
+## API Documentation
+
+Transport API: http://docs.transportapi.com/index.html?raml=http://transportapi.com/v3/raml/transportapi.raml  
+TheWeatherChannel: https://www.ng.bluemix.net/docs/services/Weather/index.html  
+Ordnance Survey: https://apidocs.os.uk/docs/introduction  
+
+## Other data
+Wimbledon Tennis Data (2014/15) and weather data for Wimbledon (2014/15): https://github.com/ibm-datapalooza/wimbledon-datasets
