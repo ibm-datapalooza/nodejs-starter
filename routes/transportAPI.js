@@ -19,6 +19,9 @@ router.get('/trainstations/:lat/:lon', function(req,res,next) {
 
     //Call transportAPI
     request(url, function (error, response, body) {
+        if (error) {
+            return res.json(error);
+        }
         var transportAPI_response = JSON.parse(body);
 
         //If we get an error, send it to the client
@@ -61,6 +64,11 @@ router.get('/journey/:fromLat/:fromLon/:toLat/:toLon', function(req,res,next) {
 
     //Call transportAPI
     request(url, function (error, response, body) {
+
+        if (error) {
+            return res.json(error);
+        }
+        
         var transportAPI_response = JSON.parse(body);
 
         //If we get an error, send it to the client

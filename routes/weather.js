@@ -22,7 +22,7 @@ router.get('/daily/:lat/:lon', function(req, res) {
     var geocode = lat+","+lon;
 
     callWeatherAPI("/api/weather/v2/forecast/daily/10day", {
-        geocode: geocode || "34.53,84.50",
+        geocode: geocode || "51.5185059,-0.088304",
         units: "m",
         language: "en"
     }, function(err, result) {
@@ -44,7 +44,7 @@ router.get('/hourly/:lat/:lon', function(req, res) {
     var geocode = lat+","+lon;
 
     callWeatherAPI("/api/weather/v2/forecast/hourly/24hour", {
-        geocode: geocode || "34.53,84.50",
+        geocode: geocode || "51.5185059,-0.088304",
         units: "m",
         language: "en"
     }, function(err, result) {

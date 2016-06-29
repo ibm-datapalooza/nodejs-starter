@@ -1,0 +1,38 @@
+/* style.css
+ * This file provides css styles.
+ */
+body {
+	padding: 20px 60px 20px 60px;
+}
+
+
+
+#map {
+	width: 100%;
+	height: 500px;
+}
+
+.transportAPIquery {
+	clear: both;
+	padding-bottom: 10px;
+}
+
+.heading {
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.jsonresponse {
+	margin-top: 4em;
+	
+
+}
+
+code {
+	max-height: 40em;
+	max-width: 100%;
+}
+
+.osrow {
+	margin-top: 50px;
+}

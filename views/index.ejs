@@ -1,1 +1,154 @@
-<h1>Hello World</h1>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Datapalooza starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap1.min.css">
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/ejs_production.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/styles/default.css">
+    <script src="js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <body>  
+   
+
+      <h2 class="heading">Datapalooza Node.js Starter</h2>
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="col-md-6">
+            <h4>TransportAPI</h4>
+
+            <div class="transportAPIquery">
+              <p>Find nearby train stations</p>
+
+              <div class="form-group">
+                <label for="trainlat">Latitude</label>
+                <input type="text" class="input-sm form-control" id="trainlat" placeholder="53.12"><br>
+                <label for="trainlng">Longitude</label>
+                <input type="text" class="input-sm form-control" id="trainlng" placeholder="-0.123">
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-6"><button class="btn btn-success btn-block btn-sm" id="trainstations">Search</button></div>
+              </div>
+
+            </div>
+
+            <br><hr>
+
+            <div class="transportAPIquery">
+              <p>Journey Plan</p>
+
+              <div class="form-group">
+                <label for="journeyfromlat">From latitude</label>
+                <input type="text" class="input-sm form-control" id="journeyfromlat" placeholder="51.518549"><br>
+                <label for="journeyfromlng">From longitude</label>
+                <input type="text" class="input-sm form-control" id="journeyfromlng" placeholder="-0.0870156"><br>
+
+                <label for="journeytolat">To latitude</label>
+                <input type="text" class="input-sm form-control" id="journeytolat" placeholder="51.5065719"><br>
+                <label for="journeytolng">To longitude</label>
+                <input type="text" class="input-sm form-control" id="journeytolng" placeholder="-0.1034423">
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-6"><button class="btn btn-success btn-block btn-sm" id="journeyplan">Search</button></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="jsonresponse"><pre><code class="transportapicode json">{hello: "world"}</code></pre></div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-2"></div> -->
+        <div class="col-md-6">
+          <div class="col-md-6">
+            <h4>The Weather Channel</h4>
+
+            <div class="transportAPIquery">
+              <p>24 hour forecast</p>
+
+              <div class="form-group">
+                <label for="weather24lat">Latitude</label>
+                <input type="text" class="input-sm form-control" id="weather24lat" placeholder="53.12"><br>
+                
+                <label for="weather24lng">Longitude</label>
+                <input type="text" class="input-sm form-control" id="weather24lng" placeholder="-0.123">
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-6"><button class="btn btn-success btn-block btn-sm" id="weather24">Search</button></div>
+              </div>
+
+            </div>
+
+            <br><hr>
+
+            <div class="transportAPIquery">
+              <p>10 day Forecast</p>
+
+              <div class="form-group">
+                <label for="weather10lat">Latitude</label>
+                <input type="text" class="input-sm form-control" id="weather10lat" placeholder="53.12"><br>
+                
+                <label for="weather10lng">Longitude</label>
+                <input type="text" class="input-sm form-control" id="weather10lng" placeholder="-0.123">
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-6"><button class="btn btn-success btn-block btn-sm" id="weather10">Search</button></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="jsonresponse"><pre><code class="weathercode json">{hello: "world"}</code></pre></div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row osrow">
+        <h4>Ordnance Survey</h4>
+
+        <div class="col-md-6">
+          <p>Display a map using the OS Maps API and Leaflet.js</p>
+          <pre><code class="javascript">var latlng = [51.518549,-0.0870156];
+      var map = L.map('map').setView(latlng, 16);
+
+      L.tileLayer('https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/zxy/EPSG%3A3857/Outdoor 3857/{z}/{x}/{y}.PNG?key=sdJSoCa7r8w2rW5LNUsB9vZCjEP0zTEP', {
+          maxZoom: 20,
+          minZoom: 7
+      }).addTo(map);
+
+      L.marker(latlng).addTo(map)
+      .bindPopup('Datapalooza Mashup')
+      .openPopup();</code></pre>
+
+      </div>
+  
+        <div class="col-md-6"><div id="map"></div></div>
+
+      </div>
+
+     
+    <!-- </div> -->
+
+  </body>
+</html>
