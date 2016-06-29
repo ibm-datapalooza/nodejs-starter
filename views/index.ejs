@@ -24,10 +24,10 @@
    
 
       <h2 class="heading">Datapalooza Node.js Starter</h2>
-      <div class="row">
+      <div class="row toprow">
 
-        <div class="col-md-6">
-          <div class="col-md-6">
+        <div class="col-md-5 col-centered apitransport">
+          <div class="col-md-5">
             <h4>TransportAPI</h4>
 
             <div class="transportAPIquery">
@@ -35,9 +35,9 @@
 
               <div class="form-group">
                 <label for="trainlat">Latitude</label>
-                <input type="text" class="input-sm form-control" id="trainlat" placeholder="53.12"><br>
+                <input type="text" class="input-sm form-control" id="trainlat" value="51.518549"><br>
                 <label for="trainlng">Longitude</label>
-                <input type="text" class="input-sm form-control" id="trainlng" placeholder="-0.123">
+                <input type="text" class="input-sm form-control" id="trainlng" value="-0.0870156">
               </div>
 
               <div class="form-group">
@@ -53,14 +53,14 @@
 
               <div class="form-group">
                 <label for="journeyfromlat">From latitude</label>
-                <input type="text" class="input-sm form-control" id="journeyfromlat" placeholder="51.518549"><br>
+                <input type="text" class="input-sm form-control" id="journeyfromlat" value="51.518549"><br>
                 <label for="journeyfromlng">From longitude</label>
-                <input type="text" class="input-sm form-control" id="journeyfromlng" placeholder="-0.0870156"><br>
+                <input type="text" class="input-sm form-control" id="journeyfromlng" value="-0.0870156"><br>
 
                 <label for="journeytolat">To latitude</label>
-                <input type="text" class="input-sm form-control" id="journeytolat" placeholder="51.5065719"><br>
+                <input type="text" class="input-sm form-control" id="journeytolat" value="51.5065719"><br>
                 <label for="journeytolng">To longitude</label>
-                <input type="text" class="input-sm form-control" id="journeytolng" placeholder="-0.1034423">
+                <input type="text" class="input-sm form-control" id="journeytolng" value="-0.1034423">
               </div>
 
               <div class="form-group">
@@ -69,14 +69,14 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="jsonresponse"><pre><code class="transportapicode json">{hello: "world"}</code></pre></div>
           </div>
         </div>
 
-        <!-- <div class="col-md-2"></div> -->
-        <div class="col-md-6">
-          <div class="col-md-6">
+        <div class="col-md-1 col-centered"></div>
+        <div class="col-md-5 col-centered apiweather">
+          <div class="col-md-5">
             <h4>The Weather Channel</h4>
 
             <div class="transportAPIquery">
@@ -84,10 +84,10 @@
 
               <div class="form-group">
                 <label for="weather24lat">Latitude</label>
-                <input type="text" class="input-sm form-control" id="weather24lat" placeholder="53.12"><br>
+                <input type="text" class="input-sm form-control" id="weather24lat" value="51.518549"><br>
                 
                 <label for="weather24lng">Longitude</label>
-                <input type="text" class="input-sm form-control" id="weather24lng" placeholder="-0.123">
+                <input type="text" class="input-sm form-control" id="weather24lng" value="-0.0870156">
               </div>
 
               <div class="form-group">
@@ -103,10 +103,10 @@
 
               <div class="form-group">
                 <label for="weather10lat">Latitude</label>
-                <input type="text" class="input-sm form-control" id="weather10lat" placeholder="53.12"><br>
+                <input type="text" class="input-sm form-control" id="weather10lat" value="51.518549"><br>
                 
                 <label for="weather10lng">Longitude</label>
-                <input type="text" class="input-sm form-control" id="weather10lng" placeholder="-0.123">
+                <input type="text" class="input-sm form-control" id="weather10lng" value="-0.0870156">
               </div>
 
               <div class="form-group">
@@ -115,7 +115,7 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-5">
 
             <div class="jsonresponse"><pre><code class="weathercode json">{hello: "world"}</code></pre></div>
           </div>
@@ -125,30 +125,30 @@
       </div>
 
       <div class="row osrow">
-        <h4>Ordnance Survey</h4>
 
-        <div class="col-md-6">
+        
+
+        <div class="col-md-5 col-centered oscol">
+          <h4>Ordnance Survey</h4>
           <p>Display a map using the OS Maps API and Leaflet.js</p>
           <pre><code class="javascript">var latlng = [51.518549,-0.0870156];
-      var map = L.map('map').setView(latlng, 16);
+            var map = L.map('map').setView(latlng, 16);
 
-      L.tileLayer('https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/zxy/EPSG%3A3857/Outdoor 3857/{z}/{x}/{y}.PNG?key=sdJSoCa7r8w2rW5LNUsB9vZCjEP0zTEP', {
-          maxZoom: 20,
-          minZoom: 7
-      }).addTo(map);
+            L.tileLayer('https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/zxy/EPSG%3A3857/Outdoor 3857/{z}/{x}/{y}.PNG?key=sdJSoCa7r8w2rW5LNUsB9vZCjEP0zTEP', {
+                maxZoom: 20,
+                minZoom: 7
+            }).addTo(map);
 
-      L.marker(latlng).addTo(map)
-      .bindPopup('Datapalooza Mashup')
-      .openPopup();</code></pre>
+            L.marker(latlng).addTo(map)
+            .bindPopup('Datapalooza Mashup')
+            .openPopup();</code></pre>
 
-      </div>
+        </div>
+        <div class="col-md-1 col-centered"></div>
   
-        <div class="col-md-6"><div id="map"></div></div>
+        <div class="col-md-5 col-centered"><div id="map"></div></div>
 
       </div>
-
-     
-    <!-- </div> -->
-
+      <p id="footer">Built by <a href="https://twitter.com/DanCunnington">Dan</a></p>
   </body>
 </html>

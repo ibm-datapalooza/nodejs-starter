@@ -8,8 +8,12 @@ body {
 
 
 #map {
-	width: 100%;
-	height: 500px;
+	width: 90%;
+	height: 419px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 3em;
 }
 
 .transportAPIquery {
@@ -35,4 +39,44 @@ code {
 
 .osrow {
 	margin-top: 50px;
+}
+
+.apitransport {
+	background-color: #e6f2ff;
+	padding: 20px;
+}
+
+.apiweather {
+	padding: 20px;
+	background-color: #e6ffe6;
+	height: 733px;
+	
+}
+
+.oscol {
+	background-color: #ffffe6;
+	padding: 20px;
+}
+
+.toprow {
+	text-align: center;
+}
+
+.osrow {
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 5em;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+#footer {
+	text-align: center;
 }
