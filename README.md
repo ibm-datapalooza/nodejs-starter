@@ -29,7 +29,7 @@
 
 9) Your app has now been loaded with your Transport API keys. You can experiment with the application, running queries for nearby train stations, Tfl journey planning, 10 day and 24 hour weather forecasting as well as viewing the OS Map.  
 
-10) If you haven't managed to complete the above steps, the application is available at http://dan-datapalooza.mybluemix.net/
+10) If you haven't managed to complete the above steps, the application is available at http://dan-datapalooza-demo.mybluemix.net/
 
 
 ## API Documentation
