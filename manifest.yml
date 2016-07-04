@@ -6,4 +6,4 @@ applications:
 declared-services:
   weatherinsights:
     label: weatherinsights
-    plan:  Free
+    plan:  Free-v2
